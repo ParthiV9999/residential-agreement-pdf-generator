@@ -52,7 +52,7 @@ if (isset($_GET['id']) && !empty($_GET['id']) && is_numeric($_GET['id'])) {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Edit Agreement - RESIDENTIAL RENTAL AGREEMENT</title>
-            <link rel="stylesheet" href="../registration/style.css" />
+            <link rel="stylesheet" href="index.css" />
         </head>
 
         <body style="background-color: navy">
