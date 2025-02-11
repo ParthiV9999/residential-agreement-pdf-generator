@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESIDENTIAL RENTAL AGREEMENT</title>
+    <link rel="stylesheet" href="../registration/style.css" />
+  </head>
+  <body style="background-color: navy">
+    <div>
+      <div class="container">
+        <div class="heading">
+          <h1>RESIDENTIAL RENTAL AGREEMENT</h1>
+        </div>
+        <form
+          action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
+          method="post"
+        >
+          <div class="form-grid form-grid-template-columns">
+            <div class="grid-gap">
+              <label for="lrname">Lessor Name</label>
+              <input
+                class="validation"
+                type="text"
+                placeholder="Enter Your Name"
+                name="lrname"
+                id="lrname"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="lradd1">Lessor Address 1</label>
+              <textarea
+                class="validation"
+                name="lradd1"
+                id="lradd1"
+                placeholder="Enter Your Address"
+                required
+              ></textarea>
+            </div>
+            <div class="grid-gap">
+              <label for="lradd2">Lessor Address 2</label>
+              <textarea
+                class="validation"
+                name="lradd2"
+                id="lradd2"
+                placeholder="Enter Your Address"
+                required
+              ></textarea>
+            </div>
+            <div class="grid-gap">
+              <label for="lrcity">Lessor City</label>
+              <input
+                class="validation"
+                type="text"
+                placeholder="Enter Your City"
+                name="lrcity"
+                id="lrcity"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="lrstate">Lessor State</label>
+              <input
+                class="validation"
+                type="text"
+                placeholder="Enter Your State"
+                name="lrstate"
+                id="lrstate"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="lrpincode">Lessor Pin Code</label>
+              <input
+                class="validation"
+                type="text"
+                placeholder="Enter Your Pin Code"
+                name="lrpincode"
+                id="lrpincode"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="lename">Lessee Name</label>
+              <input
+                class="validation"
+                type="text"
+                placeholder="Enter Your Name"
+                name="lename"
+                id="lename"
+                pattern="[A-z|a-z]{5}"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="leadd1">Lessee Address 1</label>
+              <textarea
+                class="validation"
+                name="leadd1"
+                id="leadd1"
+                placeholder="Enter Your Address"
+                required
+              ></textarea>
+            </div>
+            <div class="grid-gap">
+              <label for="leadd2">Lessee Address 2</label>
+              <textarea
+                class="validation"
+                name="leadd2"
+                id="leadd2"
+                placeholder="Enter Your Address"
+                required
+              ></textarea>
+            </div>
+            <div class="grid-gap">
+              <label for="lecity">Lessee City</label>
+              <input
+                class="validation"
+                type="text"
+                placeholder="Enter Your City"
+                name="lecity"
+                id="lecity"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="lestate">Lessee State</label>
+              <input
+                class="validation"
+                type="text"
+                placeholder="Enter Your State"
+                name="lestate"
+                id="lestate"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="lepincode">Lessee Pin Code</label>
+              <input
+                class="validation"
+                type="text"
+                placeholder="Enter Your Pin Code"
+                name="lepincode"
+                id="lepincode"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="hcategory">Category</label>
+              <select name="hcategory" id="hcategory" required>
+                <option value="">:: Select Your Category ::</option>
+                <option value="Independent House">Independent House</option>
+                <option value="Apartmen">Apartmen</option>
+                <option value="Farm House">Farm House</option>
+                <option value="Residential Property">
+                  Residential Property
+                </option>
+              </select>
+            </div>
+            <div class="grid-gap">
+              <label for="bedroom">Total Bedrooms</label>
+              <input
+                class="validation"
+                type="number"
+                placeholder="Total Bedrooms"
+                name="bedroom"
+                id="bedroom"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="bedroom">Total Bathrooms</label>
+              <input
+                class="validation"
+                type="number"
+                placeholder="Total Bathrooms"
+                name="bathroom"
+                id="bathroom"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="carparks">Total Carparks</label>
+              <input
+                class="validation"
+                type="number"
+                placeholder="Total Carparks"
+                name="carparks"
+                id="carparks"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="sqrfeet">Total Area (in Squar Feet)</label>
+              <input
+                class="validation"
+                type="number"
+                placeholder="Total area in 'xxxx' Squar Feet"
+                name="sqrfeet"
+                id="sqrfeet"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="startdate">Lease Start Date</label>
+              <input
+                class="validation"
+                type="date"
+                name="startdate"
+                id="startdate"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="leaseterm">Lease Term</label>
+              <input
+                class="validation"
+                type="number"
+                name="leaseterm"
+                id="leaseterm"
+                placeholder="Rent Duration in Months"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="notice">Notice</label>
+              <input
+                class="validation"
+                type="number"
+                name="notice"
+                id="notice"
+                maxlength="1"
+                placeholder="Monthly Notices"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="monthly_rentel">Monthly Rental Fees</label>
+              <input
+                class="validation"
+                type="number"
+                name="monthly_rentel"
+                id="monthly_rentel"
+                placeholder="Monthly Rental in Number & Word"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="advance_date">Monthly Rental Fees date</label>
+              <input
+                class="validation"
+                type="number"
+                name="advance_date"
+                id="advance_date"
+                placeholder="Monthly Rental Payment days"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="rental_deposite"
+                >Rental Deposit in Number and Words</label
+              >
+              <input
+                class="validation"
+                type="number"
+                name="rental_deposite"
+                id="rental_deposite"
+                placeholder="Rental Deposit in Number & Words"
+                required
+              />
+            </div>
+            <div class="grid-gap">
+              <label for="meter_reading">Starting Meter Reading</label>
+              <input
+                class="validation"
+                type="number"
+                name="meter_reading"
+                id="meter_reading"
+                placeholder="Enter Starting Meter Reading"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <button class="submit-btn" type="submit" name="submit">
+              Submit
+            </button>
+            <button class="submit-btn" type="reset" name="Reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

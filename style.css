@@ -1,0 +1,87 @@
+.flex-between {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  background-color: rgb(10, 152, 199);
+}
+
+header {
+  height: 70px;
+  background-color: navy;
+  color: lime;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+header .header-logo span {
+  background-color: lime;
+  color: navy;
+  padding: 0 5px;
+  margin: 0 3px;
+  border-radius: 5px;
+}
+
+header .header-link span {
+  background-color: #000;
+  color: aqua;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin: 25px;
+}
+
+header .header-link span:hover {
+  color: #000;
+  background-color: aqua;
+}
+
+main table {
+  width: 100%;
+  border: 1px solid azure;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  border-radius: inherit;
+}
+
+main table tr th,
+main table tr td {
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 3px solid azure;
+  padding: 15px 8px;
+}
+
+main table tr th {
+  font-size: 1.05rem;
+}
+
+main table tr td {
+  border: 3px solid;
+  color: lime;
+  transition: all 0.2s linear;
+}
+main table tr td:hover {
+  border: 3px solid;
+  color: rgb(5, 5, 248);
+}
+
+main table tr td a {
+  font-size: 1rem;
+  font-weight: bold;
+  border: 3px solid navy;
+  border-radius: inherit;
+  background-color: lime;
+  color: navy;
+  padding: 2px 15px;
+  text-decoration: none;
+}
+
+main table tr td a:hover {
+  color: lime;
+  background-color: navy;
+  border: 3px solid navy;
+}

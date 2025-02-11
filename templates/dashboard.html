@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../registration/style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="flex-between">
+      <div class="header-logo">Dash<span>Board</span></div>
+      <div class="header-link">
+        <span>Lessor</span>
+        <span>Lessee</span>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <table>
+          <tr>
+            <th>Lanlord Name</th>
+            <th>Landlord Address Line 1</th>
+            <th>Landlord Address Line 2</th>
+            <th>Tenant Name</th>
+            <th>Generate PDf</th>
+          </tr>
+          <tr>
+            <td>$row['name']</td>
+            <td>address 1</td>
+            <td>address 2</td>
+            <td>name</td>
+            <td><button type="button" name="pdf">pdf</button></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
